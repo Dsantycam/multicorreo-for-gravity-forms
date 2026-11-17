@@ -1,0 +1,40 @@
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# Herramientas de IA, historial y memoria (nunca al repositorio)
+.claude/
+.claude*
+CLAUDE.md
+CLAUDE.local.md
+.cursor/
+.aider*
+.history/
+memory/
+*.jsonl
+
+# Copias de plugins de terceros, paquetes y descargas
+*.zip
+*.tar.gz
+*.rar
+gravityforms/
+
+# Pruebas locales, entornos y dependencias
+tests/
+test-*.js
+test-*.php
+node_modules/
+vendor/
+.env
+.env.*
+docker-compose*.yml
+
+# Registros y temporales
+*.log
+*.tmp
+*.bak

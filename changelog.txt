@@ -1,0 +1,22 @@
+== Changelog ==
+
+= 1.0.0 =
+* Primera versión.
+* Listas de correos sin límite, con cupos por repetición, gestionadas en
+  Multicorreo > Listas de correos.
+* Nueva opción «Reparto aleatorio (Multicorreo)» en «Enviar a» de cualquier
+  notificación de Gravity Forms, con la lista a usar.
+* Bolsa barajada por lista y formulario (cada formulario lleva su ronda),
+  atómica con GET_LOCK de MySQL. Si cambian los correos, la ronda se reinicia.
+* Misma persona, mismo correo durante 12 horas (por el campo Email), sin
+  gastar cupo. Solo se guarda un hash del email, en un transient.
+* Reintentos automáticos al mismo correo asignado (5 min, 15 min, 1 h, 3 h,
+  6 h y 12 h), aviso en el escritorio y reintento manual.
+* Asignación guardada en la entrada: columna y filtro «Multicorreo: asignado
+  a», nota en la entrada, y los reenvíos desde el admin no gastan cupo.
+* Etiqueta {multicorreo} con el correo asignado.
+* Panel de reparto con totales diarios, equilibrio frente a los cupos, rondas,
+  pendientes y exportación a CSV.
+* Permisos por rol.
+* Actualizaciones automáticas desde GitHub.
+* Probado con Gravity Forms 2.5.16.
