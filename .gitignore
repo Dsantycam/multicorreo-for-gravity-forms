@@ -25,11 +25,11 @@ memory/
 gravityforms/
 
 # Pruebas locales, entornos y dependencias
-tests/
+/tests/
 test-*.js
 test-*.php
-node_modules/
-vendor/
+/node_modules/
+/vendor/
 .env
 .env.*
 docker-compose*.yml
